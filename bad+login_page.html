@@ -300,8 +300,8 @@
       const errorMessageDiv = document.getElementById('password-error');
       errorMessageDiv.textContent = ''; // Clear previous error messages
 
-      if (!password || password.length < 12 || password.length > 14) {
-        errorMessageDiv.textContent = "Password must be between 12-14 characters!";
+      if (!password || password.length < 12 || password.length > 13) {
+        errorMessageDiv.textContent = "Password must be between 12-13 characters!";
         document.getElementById('password-hint').style.display = 'block'; // Show the hint
         return false;
       }
